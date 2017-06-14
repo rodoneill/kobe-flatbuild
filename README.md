@@ -1,4 +1,4 @@
-# Flatbuild Boilerplate (Bootstrap 4)
+# Kobe Flatbuild Boilerplate (Bootstrap 4)
 This boilerplate allows for quick HTML, CSS, JS flatbuilding, compiling and minification. This project assumes you are developing using Bootstrap 4.
 Dependencies:
 - [Yarn](https://yarnpkg.com/)
@@ -21,3 +21,6 @@ As long as `gulp` is running, any changes you make to the HTML, SCSS or JS will 
 
 ### Finishing up
 To prepare your SCSS and JS for deployment, uncomment ```.pipe(sass({outputStyle : "compressed"}))``` and  ```.pipe(uglify())``` in ```gulpfile.js```. Then run ```gulp``` again to minify both files.
+
+---
+Cloned from [https://github.com/rodoneill/flatbuild]
