@@ -11,6 +11,6 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "jquery": "^3.2.1",
-	"tether": "^1.4.0"
+    "tether": "^1.4.0"
   }
 }
