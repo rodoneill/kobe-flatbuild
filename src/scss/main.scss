@@ -3,5 +3,156 @@
 @import "variables";
 
 body {
-
+	font-family: 'Roboto', sans-serif;
 }
+
+.navbar-brand
+{
+	background-image: url(/img/kobe-logo.svg);
+	text-indent: -9999px;
+	background-size: cover;
+	width: 200px;
+	height: 68px;		
+}
+
+#header
+{
+	background-image: url(/img/kobe-h-header.jpg);
+	background-size: cover;
+	padding-top: 20px;
+	min-height: 803px;
+	padding-bottom: 20px;
+}
+
+#header h2 {
+	color: #ffffff;
+	margin-top: 20px;
+	font-size: 2.9rem;
+	font-weight: 300;
+}
+
+#header h2 strong
+{
+	font-weight: 700;
+	font-size: 3.1rem;
+}
+
+#header .row{
+	color: #ffffff;
+	font-size: 17px;
+}
+
+nav a
+{
+	color: #F5F7F8 !important;
+}
+
+nav a:hover, .dropdown-toggle::after
+{
+	color: #4CB2BF !important;
+}
+
+nav .active a
+{
+	color: #4CB2BF !important;
+	font-weight: 700 !important;
+}
+
+.dropdown-menu
+{
+	background-color: #165577
+}
+
+nav a.dropdown-item
+{
+	color: #ffffff;
+}
+
+.gobtndown
+{
+	display: block;
+	width: 44px;
+	height: 44px;
+	background-image: url(/img/button-icon.svg);
+	transform: rotate(90deg);
+}
+
+.navbar .navbar-toggler
+{
+	position: absolute;
+    right: 0px;
+    background-color: #ffffff;
+    top: 90px;
+	z-index: 100;
+}
+
+@media (max-width: 321px)
+{
+	#header h2 strong
+	{
+		margin-bottom: 20px;
+		display: block;
+	}	
+}
+
+@media (min-width: 360px)
+{
+	.navbar .navbar-toggler
+	{
+		position: absolute;
+		right: 0px;
+		background-color: #ffffff;
+		top: 30px;
+		z-index: 100;
+	}
+}
+
+@media (min-width: 768px)
+{
+	.navbar-brand
+	{
+		width: 300px;
+		height: 40px;
+	}
+}
+
+@media (min-width: 991px)
+{
+	.navbar-brand
+	{
+		width: 400px;
+		height: 100px;
+	}
+}
+
+@media (min-width: 768px)
+{
+	#header{
+		border-radius: 0px 4px 100% 0px;
+		border-bottom: #26AEBB;
+		border-bottom-width: 20px;
+		border-bottom-style: solid;
+		overflow: hidden;	
+	}
+
+	#header h2
+	{
+		font-size: 3.2rem;
+		margin-top: 70px;
+	}
+	
+	.navbar-toggleable-sm .navbar-nav .nav-link
+	{
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+}
+
+@media (min-width: 1440px)
+{
+	.container
+	{
+	width: 1440px;
+	}
+}
+
