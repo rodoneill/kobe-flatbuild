@@ -77,6 +77,14 @@ nav a.dropdown-item
 	transform: rotate(90deg);
 }
 
+.gobtn
+{
+	display: block;
+	width: 44px;
+	height: 44px;
+	background-image: url(/img/button-icon.svg);
+}
+
 .navbar .navbar-toggler
 {
 	position: absolute;
@@ -86,12 +94,79 @@ nav a.dropdown-item
 	z-index: 100;
 }
 
+.xdiv
+{
+    background-image: url(/img/x.svg);
+    margin-top: -350px;
+    padding-top: 350px;
+    background-position-x: right;
+    height: 1000px;
+    background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.kobelead
+{
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.kobelead strong
+{
+	font-weight: 900;
+}
+
+.servicecategories img
+{
+	width: 80px;
+}
+
+.servicecategories .h1
+{
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.servicecategories  > div
+{
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-bottom: 60px;
+}
+
+.servicecategories .gobtn
+{
+	display: inline;
+	position: absolute;
+    bottom: 5px;
+	margin-left: -22px;
+}
+
+#whoweworkwith
+{
+	background-color: rgba(242, 245, 247, 0.75); 
+	padding-top: 40px; 
+	padding-bottom: 40px; 
+	margin-top: 40px
+}
+
+.mt-10 {
+    margin-top: 6rem !important;
+}
+
 @media (max-width: 321px)
 {
 	#header h2 strong
 	{
 		margin-bottom: 20px;
 		display: block;
+	}	
+	
+	.servicecategories  > div
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 60px;
 	}	
 }
 
