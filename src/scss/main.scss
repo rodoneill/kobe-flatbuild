@@ -85,6 +85,12 @@ nav a.dropdown-item
 	background-image: url(/img/button-icon.svg);
 }
 
+.gobtn.sml
+{
+	width: 30px;
+	height: 30px;
+}
+
 .navbar .navbar-toggler
 {
 	position: absolute;
@@ -139,7 +145,7 @@ nav a.dropdown-item
 	display: inline;
 	position: absolute;
     bottom: 5px;
-	margin-left: -22px;
+	margin-left: -16px;
 }
 
 #whoweworkwith
@@ -152,6 +158,32 @@ nav a.dropdown-item
 
 .mt-10 {
     margin-top: 6rem !important;
+}
+
+.centerStackedItems
+{
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
+	flex-wrap: wrap;
+}
+
+.kobeGreyBlurb
+{
+	color: #878A8B;	
+}
+
+.kobeGreyBlurb p:first-child
+{
+	padding-left: 380px !important;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.kobeGreyBlurb p:nth-child(2)
+{
+padding-left: 200px !important;
 }
 
 @media (max-width: 321px)
