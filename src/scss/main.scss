@@ -22,6 +22,7 @@ body {
 	padding-top: 20px;
 	min-height: 803px;
 	padding-bottom: 20px;
+	z-index: 1;
 }
 
 #header h2 {
@@ -70,22 +71,20 @@ nav a.dropdown-item
 
 .gobtndown
 {
-	display: block;
+	display: inline-block;
 	width: 44px;
 	height: 44px;
-	background-image: url(/img/button-icon.svg);
 	transform: rotate(90deg);
 }
 
-.gobtn
+.gobtn, .gobtn img
 {
-	display: block;
+	display: inline-block;
 	width: 44px;
 	height: 44px;
-	background-image: url(/img/button-icon.svg);
 }
 
-.gobtn.sml
+.gobtn.sml, .gobtn.sml img
 {
 	width: 30px;
 	height: 30px;
@@ -106,9 +105,8 @@ nav a.dropdown-item
     margin-top: -350px;
     padding-top: 350px;
     background-position-x: right;
-    height: 1000px;
+    min-height: 1000px;
     background-repeat: no-repeat;
-	z-index: -1;
 }
 
 .kobelead
@@ -152,8 +150,28 @@ nav a.dropdown-item
 {
 	background-color: rgba(242, 245, 247, 0.75); 
 	padding-top: 40px; 
-	padding-bottom: 40px; 
+	padding-bottom: 80px; 
 	margin-top: 40px
+}
+
+#whoweworkwith .col-sm
+{
+	text-align: center;
+}
+
+#whoweworkwith img
+{
+	width: 70%;
+}
+
+.fillingImageFix > div:first-child
+{
+	padding-left: 0px;
+}
+
+.fillingImageFix > div:nth-child(2)
+{
+	padding-right: 45px;
 }
 
 .mt-10 {
@@ -176,18 +194,109 @@ nav a.dropdown-item
 
 .kobeGreyBlurb p:first-child
 {
-	padding-left: 380px !important;
+	padding-left: 300px !important;
 	font-size: 18px;
 	font-style: italic;
 }
 
 .kobeGreyBlurb p:nth-child(2)
 {
-padding-left: 200px !important;
+	padding-left: 200px !important;
+}
+
+.upshift
+{
+	margin-top: -50px;
+}
+
+#productsweuse
+{
+	background-color: red;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+#productsweuse .kobelead
+{
+	color: #ffffff;
+}
+
+#productsweuse .col-sm
+{
+	text-align: center;
+}
+
+.edgyBlueButton
+{
+	background-color: #072945;
+	border: 1px solid #4CB2BF;
+	border-radius: 10px;
+	color: #ffffff;
+	padding: 10px 30px 10px 30px;
+	display: inline-block;
+}
+
+.edgyBlueButton:hover
+{
+color: #ffffff;
+font-weight: 700;
+text-decoration: none;
+}
+
+.project
+{
+	height: 325px;
+	background-size: cover;
+	color: #ffffff;
+}
+
+.project > div{
+	padding: 50px 50px 25px 50px;
+	height: 100%;
+}
+
+.project .h1
+{
+font-size: 40px;
+}
+
+.project .h2
+{
+	font-size: 40px;
+	font-weight: 300;
+}
+
+#homepageRobinaHospital
+{
+	background-image: url(/img/robina_hospital_profile/robina-hospital-header.jpg);
+}
+
+#homepageMorobeMine
+{
+	background-image: url(/img/morobe_mine_profile/morobe-mine-header.jpg);
 }
 
 @media (max-width: 321px)
 {
+	.upshift
+	{
+		margin-top: 10px;
+	}
+
+	.mt-10 {
+		margin-top: 1rem !important;
+	}
+
+	#whoweworkwith, #productsweuse
+	{
+		margin-left: -15px;
+		margin-right: -15px;	
+	}
+	
+	#productsweuse .col-sm{
+		padding-top: 20px;
+	}
+	
 	#header h2 strong
 	{
 		margin-bottom: 20px;
@@ -200,6 +309,22 @@ padding-left: 200px !important;
 		padding-right: 15px;
 		margin-bottom: 60px;
 	}	
+	
+	.kobeGreyBlurb p:first-child
+	{
+		padding-top: 20px;
+		padding-left: 0px !important;
+		font-size: 18px;
+		font-style: italic;
+		text-align: center;
+	}
+
+	.kobeGreyBlurb p:nth-child(2)
+	{
+		padding-left: 0px !important;
+		text-align: center;
+	}	
+	
 }
 
 @media (min-width: 360px)
