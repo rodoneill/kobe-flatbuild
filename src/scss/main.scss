@@ -238,14 +238,33 @@ nav a.dropdown-item
 
 .edgyBlueButton:hover
 {
-color: #ffffff;
-font-weight: 700;
-text-decoration: none;
+	color: #072945;
+	background-color: #ffffff;
+	text-decoration: none;
+}
+
+.edgyWhiteButton
+{
+	background-color: #ffffff;
+	border: 1px solid #84CBD3;
+	border-radius: 10px;
+	color: #84CBD3;
+	padding: 5px 30px 5px 30px;
+	display: inline-block;
+	font-weight: 700;
+}
+
+.edgyWhiteButton:hover
+{
+	background-color: #84CBD3;
+	color: #ffffff;
+	font-weight: 700;
+	text-decoration: none;
 }
 
 .project
 {
-	height: 325px;
+	min-height: 325px;
 	background-size: cover;
 	color: #ffffff;
 }
@@ -266,6 +285,18 @@ font-size: 40px;
 	font-weight: 300;
 }
 
+#moreAboutKobe
+{
+	margin-top: 15rem;
+}
+
+#moreAboutKobe p:first-child
+{
+	font-style: italic;
+	font-size: 23px;
+	font-weight: 300;
+}
+
 #homepageRobinaHospital
 {
 	background-image: url(/img/robina_hospital_profile/robina-hospital-header.jpg);
@@ -276,8 +307,104 @@ font-size: 40px;
 	background-image: url(/img/morobe_mine_profile/morobe-mine-header.jpg);
 }
 
+#homepagecontactform
+{
+	background-image: url(/img/form-background.jpg);
+	background-size: cover;
+	color: #ffffff;
+	padding-top: 110px;
+	padding-bottom: 80px;
+	border-radius: 40% 40% 0px 0px;
+}
+
+#homepagecontactform input
+{
+	flex-grow: 1;
+	margin-left: 10px;
+	background-color: transparent;
+	border: none;
+	color: #ffffff;
+}
+
+#homepagecontactform .form-inline
+{
+	border-bottom: 1px solid #ffffff;
+	padding-left: 0px;
+}
+
+#homepagecontactform label span
+{
+	color: #F51147;
+	margin-left: 5px;
+}
+
+#homepagecontactform textarea
+{
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	color: #ffffff;	
+}
+
+#homepagecontactform  input[type=submit]
+{
+	background-color: rgba(38, 103, 122, 0.5);
+	display: inline-block;
+	color: #ffffff;
+	border-radius: 10px;
+	padding: 8px 60px 8px 60px;
+	font-weight: 700;
+}
+
+#footer
+{
+	border-top: 5px solid #4CB2BF;
+	background-color: #0D465E;
+	margin-top: 50px;
+	color: #ffffff;
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+#footer img
+{
+	width: 60px;
+}
+
+#footer ul
+{
+	list-style: none;
+	padding-left: 0px;
+}
+
+#footer a
+{
+	color: #4CB2BF;
+	text-decoration: underline;
+}
+
+#superfooter{
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 30px 0 30px 0;
+}
+
 @media (max-width: 321px)
 {
+	
+	.no-gutters
+	{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	
+	.no-gutters > .col, .no-gutters > [class*="col-"] {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 	.upshift
 	{
 		margin-top: 10px;
