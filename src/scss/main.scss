@@ -25,6 +25,17 @@ body {
 	z-index: 1;
 }
 
+#header.industrial
+{
+	background-image: url(/img/page-header.jpg);
+	min-height: 703px;
+}
+
+#header.industrial h1{
+	font-weight: 700;
+	font-size: 4rem;
+}
+
 #header h2 {
 	color: #ffffff;
 	margin-top: 20px;
@@ -40,6 +51,11 @@ body {
 
 #header .row{
 	color: #ffffff;
+	font-size: 17px;
+}
+
+.font17
+{
 	font-size: 17px;
 }
 
@@ -105,9 +121,62 @@ nav a.dropdown-item
     margin-top: -350px;
     padding-top: 350px;
     background-position-x: right;
-    min-height: 1000px;
+    padding-bottom: 150px;
     background-repeat: no-repeat;
 }
+
+.xdiv.service2
+{
+	background-image: none;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.xdiv.service2 .row
+{
+	background-color: rgba(239, 243, 247, 0.5);
+	margin-top: -400px;
+	padding-top: 400px;
+	background-position-x: right;
+	background-image: url(/img/x.svg);
+    padding-bottom: 150px;
+    background-repeat: no-repeat;	
+}
+
+.service2boxes  img
+{
+	width: 100%;
+}
+
+.projectheading
+{
+	margin-top: 250px;
+}
+
+.projectheading p:nth-child(1)
+{
+	font-weight: 700;
+	font-size: 4rem;
+	margin-bottom: 0rem;
+}
+
+.projectheading p:nth-child(2)
+{
+	font-size: 4rem;
+	font-weight: 300;
+}
+
+.service2boxes div:nth-child(even)
+{
+	background-color: #EFF3F7;
+}
+
+.service2boxes .txt
+{
+	padding: 50px;
+}
+
 
 .kobelead
 {
@@ -149,9 +218,8 @@ nav a.dropdown-item
 #whoweworkwith
 {
 	background-color: rgba(242, 245, 247, 0.75); 
-	padding-top: 40px; 
-	padding-bottom: 80px; 
-	margin-top: 40px
+	padding-top: 50px; 
+	padding-bottom: 90px; 
 }
 
 #whoweworkwith .col-sm
@@ -178,6 +246,10 @@ nav a.dropdown-item
     margin-top: 6rem !important;
 }
 
+.mt-15 {
+    margin-top: 9rem !important;
+}
+
 .centerStackedItems
 {
 	display: flex; 
@@ -189,7 +261,7 @@ nav a.dropdown-item
 
 .kobeGreyBlurb
 {
-	color: #878A8B;	
+	color: #878A8B;		
 }
 
 .kobeGreyBlurb p:first-child
@@ -207,6 +279,17 @@ nav a.dropdown-item
 .upshift
 {
 	margin-top: -50px;
+}
+
+.projectheading
+{
+	position: relative;
+}
+
+.projectheading div
+{
+	position: absolute;
+	bottom: 50px;
 }
 
 #productsweuse
@@ -264,7 +347,7 @@ nav a.dropdown-item
 
 .project
 {
-	min-height: 325px;
+	min-height: 375px;
 	background-size: cover;
 	color: #ffffff;
 }
@@ -272,6 +355,16 @@ nav a.dropdown-item
 .project > div{
 	padding: 50px 50px 25px 50px;
 	height: 100%;
+}
+
+.project > div .row
+{
+	background-color: rgba(0, 0, 50, 0.5);
+	margin-left: -50px;
+	margin-right: -50px;
+	padding-bottom: 25px;
+	margin-bottom: -25px;
+	padding-top: 25px;
 }
 
 .project .h1
@@ -287,7 +380,7 @@ font-size: 40px;
 
 #moreAboutKobe
 {
-	margin-top: 15rem;
+	margin-top: 10rem;
 }
 
 #moreAboutKobe p:first-child
@@ -307,17 +400,23 @@ font-size: 40px;
 	background-image: url(/img/morobe_mine_profile/morobe-mine-header.jpg);
 }
 
-#homepagecontactform
+#contactform
 {
 	background-image: url(/img/form-background.jpg);
 	background-size: cover;
 	color: #ffffff;
 	padding-top: 110px;
 	padding-bottom: 80px;
-	border-radius: 40% 40% 0px 0px;
+	border-radius: 50% 50% 0px 0px;
+	border-bottom: 1px solid #ffffff;
 }
 
-#homepagecontactform input
+#contactform.portfolio
+{
+	margin-top: -250px
+}
+
+#contactform input
 {
 	flex-grow: 1;
 	margin-left: 10px;
@@ -326,19 +425,19 @@ font-size: 40px;
 	color: #ffffff;
 }
 
-#homepagecontactform .form-inline
+#contactform .form-inline
 {
 	border-bottom: 1px solid #ffffff;
 	padding-left: 0px;
 }
 
-#homepagecontactform label span
+#contactform label span
 {
 	color: #F51147;
 	margin-left: 5px;
 }
 
-#homepagecontactform textarea
+#contactform textarea
 {
 	width: 100%;
 	height: 50px;
@@ -347,7 +446,7 @@ font-size: 40px;
 	color: #ffffff;	
 }
 
-#homepagecontactform  input[type=submit]
+#contactform  input[type=submit]
 {
 	background-color: rgba(38, 103, 122, 0.5);
 	display: inline-block;
@@ -355,13 +454,24 @@ font-size: 40px;
 	border-radius: 10px;
 	padding: 8px 60px 8px 60px;
 	font-weight: 700;
+	cursor: pointer;
+}
+
+#contactform  input[type=submit]:hover
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	color: rgb(38, 103, 122);
+}
+
+#certifications
+{
+	margin-bottom: 50px;	
 }
 
 #footer
 {
 	border-top: 5px solid #4CB2BF;
-	background-color: #0D465E;
-	margin-top: 50px;
+	background-color: #0D465E;	
 	color: #ffffff;
 	padding-top: 70px;
 	padding-bottom: 50px;
@@ -389,6 +499,64 @@ font-size: 40px;
 	color: #ffffff;
 	font-size: 12px;
 	padding: 30px 0 30px 0;
+}
+
+.service > div.row, .projecttop > div.row:nth-child(1)
+{
+	padding-top: 80px;
+}
+
+.projecttop > div.row:nth-child(2)
+{
+padding-bottom: 100px;
+}
+
+.service > div.row div:first-child
+{
+	padding: 15px 85px;
+}
+
+.service img, .projecttop img
+{
+	width: 100%;
+}
+
+.projecttop .txt
+{
+	padding: 50px 50px 50px 100px;;
+	background-color: rgba(239, 243, 247, 0.5);
+}
+
+.service2
+{
+font-size: 1.1rem;
+}
+
+.portfoliofeatures
+{
+	background: #041c36; /* Old browsers */
+	background: -moz-linear-gradient(left, #041c36 1%, #072d46 50%, #072a45 50%, #207cca 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #041c36 1%,#072d46 50%,#072a45 50%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #041c36 1%,#072d46 50%,#072a45 50%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#041c36', endColorstr='#207cca',GradientType=1 ); /* IE6-9 */
+	padding: 60px 150px 200px 150px;
+	border-top: 10px solid #A5D8DF;
+	border-radius: 20% 45% 0 0;
+}
+
+.portfoliofeatures .heading
+{
+	color: #42A8B7;
+	font-weight: 700;
+	font-size: 28px;	
+}
+
+.portfoliofeatures  ul
+{
+	list-style: none;
+	padding-left: 0px;
+	color: #ffffff;
+	font-weight: 700;
 }
 
 @media (max-width: 321px)
