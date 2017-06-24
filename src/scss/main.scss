@@ -25,13 +25,18 @@ body {
 	z-index: 1;
 }
 
+#header.contact
+{
+	background-image: url(/img/contact-header.jpg);
+}
+
 #header.industrial
 {
 	background-image: url(/img/page-header.jpg);
 	min-height: 703px;
 }
 
-#header.industrial h1{
+#header h1{
 	font-weight: 700;
 	font-size: 4rem;
 }
@@ -57,6 +62,11 @@ body {
 .font17
 {
 	font-size: 17px;
+}
+
+.contactinfo
+{
+	font-size: 31px;
 }
 
 nav a
@@ -125,12 +135,23 @@ nav a.dropdown-item
     background-repeat: no-repeat;
 }
 
+.xdiv.aboutus
+{
+	margin-top: 0px;
+	padding-top: 70px;
+}
+
 .xdiv.service2
 {
 	background-image: none;
 	margin-top: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
+}
+
+.xdiv.contactinfo
+{
+	padding-bottom: 300px;
 }
 
 .xdiv.service2 .row
@@ -144,14 +165,14 @@ nav a.dropdown-item
     background-repeat: no-repeat;	
 }
 
+.greytransparentbackground
+{
+	background-color: rgba(239, 243, 247, 0.5);
+}
+
 .service2boxes  img
 {
 	width: 100%;
-}
-
-.projectheading
-{
-	margin-top: 250px;
 }
 
 .projectheading p:nth-child(1)
@@ -242,12 +263,58 @@ nav a.dropdown-item
 	padding-right: 45px;
 }
 
+.mt-6{
+margin-top: 4rem;
+}
+
 .mt-10 {
     margin-top: 6rem !important;
 }
 
 .mt-15 {
     margin-top: 9rem !important;
+}
+
+.mt-20 {
+	margin-top: 18rem !important;
+}
+
+.productlist a
+{
+	color: #4CB2BF !important;
+	font-weight: 700;
+}
+
+.productlist img
+{
+	max-height: 150px;
+}
+
+.greytransparentbackground.productlist
+{
+	padding-bottom: 300px;
+}
+
+#intercomsystems
+{
+	background-color: #E3E3E3;
+	border-radius: 25% 25% 0px 0px;
+	margin-top: -200px;
+	padding-top: 100px;
+	padding-bottom: 350px;
+}
+
+#ourbackground
+{
+	color: #ffffff;
+	padding-top: 540px;
+	margin-top: -500px;
+	padding-bottom: 50px;
+	background-color: #ff0000;
+}
+
+#ourbackground h2{
+font-weight: 700;
 }
 
 .centerStackedItems
@@ -279,6 +346,11 @@ nav a.dropdown-item
 .upshift
 {
 	margin-top: -50px;
+}
+
+.upshiftbig
+{
+	margin-top: -260px;
 }
 
 .projectheading
@@ -411,6 +483,11 @@ font-size: 40px;
 	border-bottom: 1px solid #ffffff;
 }
 
+#contactform.contactinfo
+{
+	margin-top: -100px;
+}
+
 #contactform.portfolio
 {
 	margin-top: -250px
@@ -506,7 +583,7 @@ font-size: 40px;
 	padding-top: 80px;
 }
 
-.projecttop > div.row:nth-child(2)
+.projecttop > div.row:nth-child(1)
 {
 padding-bottom: 100px;
 }
@@ -532,7 +609,7 @@ padding-bottom: 100px;
 font-size: 1.1rem;
 }
 
-.portfoliofeatures
+.portfoliofeatures, .aboutussection
 {
 	background: #041c36; /* Old browsers */
 	background: -moz-linear-gradient(left, #041c36 1%, #072d46 50%, #072a45 50%, #207cca 100%); /* FF3.6-15 */
@@ -543,6 +620,13 @@ font-size: 1.1rem;
 	border-top: 10px solid #A5D8DF;
 	border-radius: 20% 45% 0 0;
 }
+
+ .aboutussection
+ {
+	margin-top: -100px;
+	color: #ffffff;
+	padding: 90px 0 325px 0;
+ }
 
 .portfoliofeatures .heading
 {
@@ -561,8 +645,45 @@ font-size: 1.1rem;
 
 @media (max-width: 321px)
 {
+	.portfoliofeatures 
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#intercomsystems
+	{
+		border-radius: 0px;
+		padding-top: 20px;
+	}
+
+	.portfoliofeatures, .aboutussection
+	{
+		border-radius: 0px;
+	}
+
+	#header
+	{
+		min-height: 0px !important;
+	}
+
+	#contactform{
+		border-radius: 0px;
+	}
+
+	.project > div
+	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 	
-	.no-gutters
+	.project > div .row
+	{
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+	
+	.project > div .row, .no-gutters
 	{
 		margin-left: -15px;
 		margin-right: -15px;
@@ -624,6 +745,15 @@ font-size: 1.1rem;
 
 @media (min-width: 360px)
 {
+	.mt-20-sm{
+		margin-top: 18rem !important; 
+	}
+	
+	mt-0-sm
+	{
+		margin-top: 0rem !important;
+	}
+
 	.navbar .navbar-toggler
 	{
 		position: absolute;
